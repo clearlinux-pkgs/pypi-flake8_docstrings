@@ -17,13 +17,13 @@ BuildRequires : buildreq-distutils3
 Provides: flake8-docstrings
 Provides: flake8-docstrings-python
 Provides: flake8-docstrings-python3
-BuildRequires : pluggy
+BuildRequires : pypi(pluggy)
 BuildRequires : py-python
 BuildRequires : pypi(flake8)
 BuildRequires : pypi(pydocstyle)
 BuildRequires : pytest
 BuildRequires : tox
-BuildRequires : virtualenv
+BuildRequires : pypi(virtualenv)
 
 %description
 =================
