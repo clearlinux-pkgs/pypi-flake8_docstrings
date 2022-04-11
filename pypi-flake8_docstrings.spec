@@ -4,7 +4,7 @@
 #
 Name     : pypi-flake8_docstrings
 Version  : 1.6.0
-Release  : 51
+Release  : 52
 URL      : https://files.pythonhosted.org/packages/c1/a6/b8a953fb256ee383fed9094f7270ab75cd637c23749c211f0e6b3552a31e/flake8-docstrings-1.6.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/c1/a6/b8a953fb256ee383fed9094f7270ab75cd637c23749c211f0e6b3552a31e/flake8-docstrings-1.6.0.tar.gz
 Summary  : Extension for flake8 which uses pydocstyle to check docstrings
@@ -14,16 +14,13 @@ Requires: pypi-flake8_docstrings-license = %{version}-%{release}
 Requires: pypi-flake8_docstrings-python = %{version}-%{release}
 Requires: pypi-flake8_docstrings-python3 = %{version}-%{release}
 BuildRequires : buildreq-distutils3
-Provides: flake8-docstrings
-Provides: flake8-docstrings-python
-Provides: flake8-docstrings-python3
-BuildRequires : pypi(pluggy)
-BuildRequires : py-python
 BuildRequires : pypi(flake8)
+BuildRequires : pypi(py)
 BuildRequires : pypi(pydocstyle)
-BuildRequires : pytest
-BuildRequires : tox
-BuildRequires : pypi(virtualenv)
+BuildRequires : pypi-pluggy
+BuildRequires : pypi-pytest
+BuildRequires : pypi-tox
+BuildRequires : pypi-virtualenv
 
 %description
 =================
@@ -69,7 +66,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1641436005
+export SOURCE_DATE_EPOCH=1649695051
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fno-lto "
 export FCFLAGS="$FFLAGS -fno-lto "
