@@ -1,5 +1,5 @@
 PKG_NAME := pypi-flake8_docstrings
-URL = https://files.pythonhosted.org/packages/c1/a6/b8a953fb256ee383fed9094f7270ab75cd637c23749c211f0e6b3552a31e/flake8-docstrings-1.6.0.tar.gz
+URL = https://files.pythonhosted.org/packages/93/24/f839e3a06e18f4643ccb81370909a497297909f15106e6af2fecdef46894/flake8_docstrings-1.7.0.tar.gz
 ARCHIVES = 
 
 include ../common/Makefile.common
